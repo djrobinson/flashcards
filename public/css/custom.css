@@ -1,0 +1,50 @@
+.sidebar {
+  background-color: #00004d;
+  display: block;
+  height: 100%;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  bottom: 0 !important;
+}
+
+h1 {
+  font-family: Crimson Text !important;
+  font-size: 48px !important;
+}
+
+p {
+  font-family: Cabin !important;
+  font-size: 18px !important;
+}
+
+#profilePic {
+  display: block;
+  width: 80% ;
+  margin: 100px auto 0 auto;
+  border-radius: 50%;
+}
+
+.white-text {
+  color: white;
+}
+
+.menu-sel {
+  display: block;
+  margin: 0 auto 0 auto !important;
+  color: white;
+  margin: none !important;
+}
+
+.menu-sel > li {
+  padding: 10px;
+  margin: 0 auto 0 auto;
+  list-style: none;
+  display: inline-block;
+  border-right: solid 1px white;
+  font-size: 20px;
+}
+
+.menu-sel > li:last-child {
+  border-right: none;
+}

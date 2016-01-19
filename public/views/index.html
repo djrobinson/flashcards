@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html ng-app="flashcards">
 <head>
@@ -5,15 +6,14 @@
 
     <title>Flashcards!</title>
 
-
+  <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-
   <script type="text/javascript" src="libs/angular/angular.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="libs/angular-sanitize/angular-sanitize.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata|Crimson+Text|Cabin' rel='stylesheet' type='text/css'>
 
   <script type="text/javascript" src="js/core.js"</script>
-
 
   <script type="text/javascript" src="js/tinymce/tinymce.min.js"></script>
   <script type="text/javascript" src="libs/tinymce-dist/tinymce.js"></script>
@@ -22,12 +22,24 @@
 </head>
 <body ng-controller="cardController">
 
-  <div ng-repeat="card in cards">
-    <h3>{{ card.question }}</h3>
+<div class="col-sm-3 sidebar">
+  <img id="profilePic" src="images/blankProfile.png" alt="profile">
+  <br>
+  <br>
+  <h2 class="white-text text-center">Daniel J Robinson</h1>\
+  <ul class="menu-sel">
+    <li>Resume</li>
+    <li>Portfolio</li>
+    <li>Blog</li>
+  </ul>
+</div>
+<div class="col-sm-9 col-sm-offset-3 main">
+  <div class="col-sm-8 col-sm-offset-2" ng-repeat="card in cards">
+    <h1 class="text-center">{{ card.question }}</h1>
     <p ng-bind-html="card.answer"></p>
   </div>
 
-  <div id="card-form" class="row">
+  <div id="card-form">
     <div class="col-sm-8 col-sm-offset-2 text-center">
       <form>
         <div class="form-group">
@@ -35,14 +47,14 @@
           <input type="text" class="form-control input-lg text-center" placeholder="Enter Question Here" ng-model="formData.question">
           </br>
           <textarea ui-tinymce="tinymceoptions" ng-model="formData.answer"></textarea>
-        </div>  
+        </div>
 
 
           <button type="submit" class="btn btn-primary btn-lg" ng-click="createCard()">Create Flashcard</button>
       </form>
     </div>
   </div>
-
+</div>
 </body>
 </html>
 
