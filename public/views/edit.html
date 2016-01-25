@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html ng-app="flashcards">
 <head>
@@ -39,7 +38,21 @@
     <p ng-bind-html="card.answer"></p>
   </div>
 
+  <div id="card-form">
+    <div class="col-sm-8 col-sm-offset-2 text-center">
+      <form>
+        <div class="form-group">
+
+          <input type="text" class="form-control input-lg text-center" placeholder="Enter Question Here" ng-model="formData.question">
+          </br>
+          <textarea ui-tinymce="tinymceoptions" ng-model="formData.answer"></textarea>
+        </div>
+
+
+          <button type="submit" class="btn btn-primary btn-lg" ng-click="createCard()">Create Flashcard</button>
+      </form>
+    </div>
+  </div>
 </div>
 </body>
 </html>
-
