@@ -1,5 +1,5 @@
 .sidebar {
-  background-color: #00004d;
+  background-color: #2b3e50;
   display: block;
   height: 100%;
   position: fixed !important;
@@ -8,6 +8,24 @@
   bottom: 0 !important;
 }
 
+code {
+  display: block;
+  margin: 0 auto 0 auto;
+  width: 70% !important;
+  padding: 5px;
+  background-color: white !important;
+}
+
+.main {
+  background-color: #F7F9FA !important;
+  color: #000000 !important;
+}
+
+.title {
+  font-size: 4em;
+  margin: 50px 0 50px 0;
+}
+/*
 h1 {
   font-family: Crimson Text !important;
   font-size: 48px !important;
@@ -15,8 +33,8 @@ h1 {
 
 p {
   font-family: Cabin !important;
-  font-size: 18px !important;
-}
+  font-size: 18px !important;*/
+/*}*/
 
 #profilePic {
   display: block;
@@ -37,11 +55,11 @@ p {
 }
 
 .menu-sel > li {
-  padding: 10px;
-  margin: 0 auto 0 auto;
+  padding: 0px 10px 0px 10px;
+  margin: 5px auto 5px auto;
   list-style: none;
   display: inline-block;
-  border-right: solid 1px white;
+  border-right: solid 1px #596a7b;
   font-size: 20px;
 }
 

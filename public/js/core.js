@@ -26,20 +26,26 @@ angular.module('flashcards', ['ui.tinymce','ngSanitize'])
       }
     }
 
-    //create retrieval of a random card from the db, go off id, get count first, elimnate used ids (somehow?)
-    //$scope.randomCard = function(category) {
-
-      //}
-  })
+  $scope.deleteCard = function(id) {
+    Cards.delete(id)
+        // if successful creation, call our get function to get all the new todos
+        .success(function(data) {
+            $scope.cards = data; // assign our new list of todos
+        });
+      };
+    })
 
   .factory('Cards', function($http) {
     return {
-        get : function() {
-            return $http.get('/api/cards');
-        },
-        create : function(cardData) {
-            return $http.post('/api/cards', cardData);
-        }
+      get : function() {
+          return $http.get('/api/cards');
+      },
+      create : function(cardData) {
+          return $http.post('/api/cards', cardData);
+      },
+      delete : function(id) {
+          return $http.delete('/api/cards/' + id);
+      }
     }
   })
 

@@ -30,6 +30,22 @@ var Card = require('./models/card');
 			})
 		});
 
+    app.delete('/api/cards/:card_id', function(req, res) {
+        Card.remove({
+            _id : req.params.card_id
+        }, function(err, card) {
+            if (err)
+                res.send(err);
+
+            // get and return all the blogs after you create another
+            Card.find(function(err, cards) {
+                if (err)
+                    res.send(err)
+                res.json(cards);
+            });
+        });
+    });
+
 		app.get('/login', function(req, res){
 			res.sendfile('./public/views/login.html', { message: req.flash('loginMessage') });
 		})

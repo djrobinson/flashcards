@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
 
-    <title>Flashcards!</title>
+    <title>Danny Robinson</title>
 
   <link rel="stylesheet" href="css/custom.css">
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-  <script type="text/javascript" src="libs/angular/angular.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/superhero/bootstrap.min.css" rel="stylesheet" integrity="sha256-AbCXzDgd7Vj/2JrsXgjrLdYZ92AgN262cXvQr4tAQa4= sha512-cA2CLCEXBR7hnXGgSNa+TaQ7WT2zW1IVm6uCLcu3ebHNhy+VIudw9kwgHlcL57wCiiXLZ1x7yT5Mv3QkDO2XZA==" crossorigin="anonymous"><script type="text/javascript" src="libs/angular/angular.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="libs/angular-sanitize/angular-sanitize.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Inconsolata|Crimson+Text|Cabin' rel='stylesheet' type='text/css'>
@@ -26,7 +25,9 @@
   <img id="profilePic" src="images/blankProfile.png" alt="profile">
   <br>
   <br>
-  <h2 class="white-text text-center">Daniel J Robinson</h1>\
+  <h1 class="white-text text-center">Danny Robinson</h1>
+  <br>
+  <br>
   <ul class="menu-sel">
     <li>Resume</li>
     <li>Portfolio</li>
@@ -35,7 +36,7 @@
 </div>
 <div class="col-sm-9 col-sm-offset-3 main">
   <div class="col-sm-8 col-sm-offset-2" ng-repeat="card in cards">
-    <h1 class="text-center">{{ card.question }}</h1>
+    <h1 class="text-center title">{{ card.question }}</h1>
     <p ng-bind-html="card.answer"></p>
   </div>
 
