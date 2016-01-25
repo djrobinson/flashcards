@@ -1,17 +1,33 @@
- {
-   "name": "flashcard",
-   "main": "server.js",
-   "dependencies": {
-     "express" : "~4.5.1",
-     "mongoose" : "~3.8.0",
-     "body-parser" : "~1.4.2",
-     "method-override" : "~2.0.2",
-     "morgan"     : "~1.2.2",
-     "passport" : "~0.1.17",
-     "passport-local" : "~0.1.6",
-     "connect-flash" : "~0.1.1",
-     "bcrypt-nodejs" : "latest",
-     "express-session": "~1.0.0",
-     "cookie-parser": "1.4.1"
-   }
- }
+{
+  "name": "flashcard",
+  "main": "server.js",
+  "dependencies": {
+    "express": "~4.5.1",
+    "mongoose": "~3.8.0",
+    "body-parser": "~1.4.2",
+    "method-override": "~2.0.2",
+    "morgan": "~1.2.2",
+    "passport": "~0.1.17",
+    "passport-local": "~0.1.6",
+    "connect-flash": "~0.1.1",
+    "bcrypt-nodejs": "latest",
+    "express-session": "~1.0.0",
+    "cookie-parser": "1.4.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "version": "1.0.0",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djrobinson/flashcards.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djrobinson/flashcards/issues"
+  },
+  "homepage": "https://github.com/djrobinson/flashcards#readme",
+  "description": ""
+}
