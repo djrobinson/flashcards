@@ -23,11 +23,14 @@
     "type": "git",
     "url": "git+https://github.com/djrobinson/flashcards.git"
   },
-  "author": "",
+  "author": "danny",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/djrobinson/flashcards/issues"
   },
   "homepage": "https://github.com/djrobinson/flashcards#readme",
-  "description": ""
+  "description": "blog",
+  "keywords": [
+    "blog"
+  ]
 }
